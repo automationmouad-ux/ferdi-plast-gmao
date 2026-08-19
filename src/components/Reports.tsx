@@ -145,7 +145,7 @@ export function Reports() {
           <CardContent className="p-4">
             <p className="text-sm text-slate-500">{t("totalCost")}</p>
             <p className="text-2xl font-bold text-slate-900">
-              {(breakdowns.reduce((sum, bd) => sum + bd.cost, 0) + workOrders.reduce((sum, wo) => sum + wo.cost, 0)).toFixed(0)}€
+              {(breakdowns.reduce((sum, bd) => sum + bd.cost, 0) + workOrders.reduce((sum, wo) => sum + wo.cost, 0)).toFixed(0)} DA
             </p>
           </CardContent>
         </Card>
@@ -172,13 +172,13 @@ export function Reports() {
                   <td className="py-2 px-3">{t("breakdowns")}</td>
                   <td className="py-2 px-3">{breakdowns.length}</td>
                   <td className="py-2 px-3">{breakdowns.reduce((sum, bd) => sum + bd.duration, 0).toFixed(1)}h</td>
-                  <td className="py-2 px-3">{breakdowns.reduce((sum, bd) => sum + bd.cost, 0).toFixed(0)}€</td>
+                  <td className="py-2 px-3">{breakdowns.reduce((sum, bd) => sum + bd.cost, 0).toFixed(0)} DA</td>
                 </tr>
                 <tr className="border-b border-slate-100">
                   <td className="py-2 px-3">{t("workOrders")}</td>
                   <td className="py-2 px-3">{workOrders.length}</td>
                   <td className="py-2 px-3">-</td>
-                  <td className="py-2 px-3">{workOrders.reduce((sum, wo) => sum + wo.cost, 0).toFixed(0)}€</td>
+                  <td className="py-2 px-3">{workOrders.reduce((sum, wo) => sum + wo.cost, 0).toFixed(0)} DA</td>
                 </tr>
                 <tr className="border-b border-slate-100">
                   <td className="py-2 px-3">{t("preventiveMaintenance")}</td>
@@ -190,7 +190,7 @@ export function Reports() {
                   <td className="py-2 px-3">{t("spareParts")}</td>
                   <td className="py-2 px-3">{spareParts.length}</td>
                   <td className="py-2 px-3">-</td>
-                  <td className="py-2 px-3">{spareParts.reduce((sum, sp) => sum + sp.price * sp.currentStock, 0).toFixed(0)}€</td>
+                  <td className="py-2 px-3">{spareParts.reduce((sum, sp) => sum + sp.price * sp.currentStock, 0).toFixed(0)} DA</td>
                 </tr>
                 <tr>
                   <td className="py-2 px-3">{t("regulatoryControls")}</td>
