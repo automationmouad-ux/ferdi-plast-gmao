@@ -226,7 +226,7 @@ export function MachineFiche({ machine, onClose }: MachineFicheProps) {
                   </div>
                   <div>
                     <p className="text-slate-500">تكلفة الصيانة</p>
-                    <p className="font-medium text-amber-600">{totalCost.toLocaleString()} €</p>
+                    <p className="font-medium text-amber-600">{totalCost.toLocaleString()} DA</p>
                   </div>
                 </div>
               </CardContent>
