@@ -268,7 +268,7 @@ export function WorkOrders() {
                   </div>
                   <div>
                     <p className="text-slate-500">{t("cost")}</p>
-                    <p className="font-medium">{wo.cost}€</p>
+                    <p className="font-medium">{wo.cost} DA</p>
                   </div>
                 </div>
                 <div className="mt-4 flex gap-2">
