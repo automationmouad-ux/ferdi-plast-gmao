@@ -279,7 +279,7 @@ export function formatKPIValue(value: number | null, unit: string = ""): string 
   
   if (unit === "%") return `${value.toFixed(1)}%`;
   if (unit === "h") return `${value.toFixed(1)}h`;
-  if (unit === "€") return `${value.toLocaleString()} €`;
+  if (unit === "€") return `${value.toLocaleString()} DA`;
   
   return value.toFixed(1);
 }
