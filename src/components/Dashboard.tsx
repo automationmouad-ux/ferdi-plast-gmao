@@ -27,7 +27,7 @@ export function Dashboard() {
     { label: t("totalMachines"), value: machines.length, icon: Wrench, color: "bg-amber-100 text-amber-600" },
     { label: t("totalBreakdowns"), value: breakdowns.length, icon: AlertTriangle, color: "bg-red-100 text-red-600" },
     { label: t("totalDowntime"), value: `${totalDowntime.toFixed(1)}h`, icon: Clock, color: "bg-orange-100 text-orange-600" },
-    { label: t("totalCost"), value: `${totalCost.toFixed(0)}€`, icon: DollarSign, color: "bg-emerald-100 text-emerald-600" },
+    { label: t("totalCost"), value: `${totalCost.toFixed(0)} DA`, icon: DollarSign, color: "bg-emerald-100 text-emerald-600" },
   ];
 
   const kpis = [
