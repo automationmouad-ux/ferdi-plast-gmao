@@ -249,7 +249,7 @@ export function SpareParts() {
                 </div>
                 <div>
                   <p className="text-slate-500">{t("price")}</p>
-                  <p className="font-medium">{sp.price}€</p>
+                  <p className="font-medium">{sp.price} DA</p>
                 </div>
                 <div>
                   <p className="text-slate-500">{t("stockLocation")}</p>
