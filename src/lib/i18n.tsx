@@ -312,7 +312,13 @@ const translations: Record<Language, Record<string, string>> = {
 };
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("fr");
+  const [language, setLanguageState] = useState<Language>("fr");
+
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = lang;
+  };
 
   const t = (key: string): string => {
     return translations[language][key] || key;
